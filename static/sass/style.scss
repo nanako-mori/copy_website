@@ -1,2 +1,28 @@
 @charset "utf-8";
+@import "reset";
 @import "settings";
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: $contentsWidthLg;
+    max-width: $maxWidthLg;
+    padding: 20px 0;
+    margin: 0 auto;
+    font-size: $fontSm;
+}
+
+.header_logo {
+    width: 128px;
+    vertical-align: bottom;
+}
+
+.subtitle {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.contact_btn {
+    @include contactBtn();
+}

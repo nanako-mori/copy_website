@@ -20,3 +20,13 @@ $bgColor01: #fef5e0;
 // 幅の定義
 $contentsWidth: 860px;
 $contentsWidthLg: 1170px;
+$maxWidth: calc(100% - 40px);
+$maxWidthLg: calc(100% - 20px);
+
+@mixin contactBtn($radius: 25px, $padding: 11px 40px) {
+    padding: $padding;
+    color: $colorWhite;
+    text-align: center;
+    background-color: $accentColor02;
+    border-radius: $radius;
+}
