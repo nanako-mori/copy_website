@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+body {
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
 a {
   text-decoration: none;
 }
@@ -127,9 +132,7 @@ header {
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
-  line-height: 1.6;
   text-align: center;
-  letter-spacing: 1.5px;
 }
 
 .sns_btn {
@@ -158,5 +161,65 @@ header {
   color: #fff;
   background-color: #1877f2;
   border-radius: 3px;
+}
+
+.introduction {
+  height: 587px;
+  padding: 40px 0;
+  background: url(../images/introbottom.jpg) no-repeat;
+  background-size: cover;
+}
+
+.howto {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.braces {
+  position: relative;
+  width: 860px;
+  max-width: calc(100% - 40px);
+  padding: 15px 30px;
+  margin: 0 auto;
+}
+
+.braces::before,
+.braces::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: "";
+}
+
+.braces::before {
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+
+.braces::after {
+  right: 0;
+  bottom: 0;
+  border-right: 4px solid #ebb94d;
+  border-bottom: 4px solid #ebb94d;
+}
+
+.howto_text {
+  padding: 40px 0;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.howto_text div {
+  margin-bottom: 24px;
+}
+
+.howto_text div strong {
+  font-weight: 700;
+  background: linear-gradient(transparent 70%, #ebb94d 70%);
 }
 /*# sourceMappingURL=map/style.css.map */

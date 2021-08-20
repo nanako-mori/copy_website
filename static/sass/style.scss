@@ -93,9 +93,7 @@ header {
 .period {
     @include textWhiteBold(21px);
     margin-bottom: 10px;
-    line-height: 1.6;
     text-align: center;
-    letter-spacing: 1.5px;
 }
 
 .sns_btn {
@@ -109,4 +107,56 @@ header {
 
 .facebook {
     @include snsBtn();
+}
+
+.introduction {
+    height: 587px;
+    padding: 40px 0;
+    background: url(../images/introbottom.jpg) no-repeat;
+    background-size: cover;
+}
+
+.howto {
+    @include titleBaseStyle($fontXl);
+}
+
+.braces {
+    position: relative;
+    width: $contentsWidth;
+    max-width: $maxWidth;
+    padding: 15px 30px;
+    margin: 0 auto;
+    &::before,
+    &::after {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        content: "";
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        border-top: 4px solid $accentColor01;
+        border-left: 4px solid $accentColor01;
+    }
+    &::after {
+        right: 0;
+        bottom: 0;
+        border-right: 4px solid $accentColor01;
+        border-bottom: 4px solid $accentColor01;
+    }
+}
+
+.howto_text {
+    padding: 40px 0;
+    font-size: 20px;
+    color: $textBaseColor;
+    text-align: center;
+    div {
+        margin-bottom: 24px;
+        strong {
+            font-weight: 700;
+            background: linear-gradient(transparent 70%, $accentColor01 70%);
+        }
+    }
 }
