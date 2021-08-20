@@ -82,4 +82,81 @@ header {
 .title h1 {
   font-size: 16px;
 }
+
+.conversion {
+  padding: 30px 0;
+  background-color: #ebb94d;
+}
+
+.get_skill {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.attention {
+  font-size: 18px;
+  font-weight: 600;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+.contact_btn_lg {
+  padding: 25px 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #da6b64;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  max-width: 1028px;
+  margin: 45px auto;
+}
+
+.period {
+  font-size: 21px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.sns_btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.twitter {
+  height: 20px;
+  padding: 1px 8px 1px 6px;
+  margin-right: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1b95e0;
+  border-radius: 3px;
+}
+
+.facebook {
+  height: 20px;
+  padding: 1px 8px 1px 6px;
+  margin-right: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1877f2;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=map/style.css.map */

@@ -3,6 +3,7 @@
 @import "settings";
 
 header {
+    // flexCenterを使用する
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,4 +57,56 @@ header {
     h1 {
         font-size: $fontMd;
     }
+}
+
+.conversion {
+    padding: 30px 0;
+    background-color: $accentColor01;
+}
+
+.get_skill {
+    @include textWhiteBold($fontLg);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.attention {
+    font-size: $fontLg;
+    font-weight: 600;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+.contact_btn_lg {
+    @include contactBtn(50px, 25px 50px);
+    @include textWhiteBold(28px);
+    display: block;
+    max-width: 1028px;
+    margin: 45px auto;
+}
+
+.period {
+    @include textWhiteBold(21px);
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.sns_btn {
+    @include flexCenter;
+    margin-bottom: 10px;
+}
+
+.twitter {
+    @include snsBtn(#1b95e0);
+}
+
+.facebook {
+    @include snsBtn();
 }

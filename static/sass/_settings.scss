@@ -45,3 +45,25 @@ $maxWidthLg: calc(100% - 20px);
     color: $textBaseColor;
     text-align: center;
 }
+
+@mixin textWhiteBold($font) {
+    font-size: $font;
+    font-weight: 600;
+    color: $colorWhite;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin snsBtn($bgcolor: #1877f2) {
+    height: 20px;
+    padding: 1px 8px 1px 6px;
+    margin-right: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: $colorWhite;
+    background-color: $bgcolor;
+    border-radius: 3px;
+}
