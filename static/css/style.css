@@ -40,4 +40,45 @@ header {
   background-color: #da6b64;
   border-radius: 25px;
 }
+
+.key_visual {
+  position: relative;
+  height: 500px;
+  background: url(../images/main.jpg) no-repeat;
+  background-size: cover;
+}
+
+.pos_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catch_copy {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.catch_copy p {
+  margin-bottom: 10px;
+}
+
+.main_logo {
+  width: 317px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 16px;
+}
 /*# sourceMappingURL=map/style.css.map */

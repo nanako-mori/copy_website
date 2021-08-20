@@ -26,3 +26,33 @@ header {
 .contact_btn {
     @include contactBtn();
 }
+
+.key_visual {
+    position: relative;
+    height: 500px;
+    background: url(../images/main.jpg) no-repeat;
+    background-size: cover;
+}
+
+.pos_center {
+    @include positionCenter;
+}
+
+.catch_copy {
+    @include titleBaseStyle($fontXl);
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.main_logo {
+    width: 317px;
+    margin-bottom: 20px;
+}
+
+.title {
+    @include titleBaseStyle($fontMd);
+    h1 {
+        font-size: $fontMd;
+    }
+}
