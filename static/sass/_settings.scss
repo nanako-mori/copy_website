@@ -67,3 +67,28 @@ $maxWidthLg: calc(100% - 20px);
     background-color: $bgcolor;
     border-radius: 3px;
 }
+
+@mixin circle($bgcolor, $color) {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    line-height: 80px;
+    color: $color;
+    text-align: center;
+    background-color: $bgcolor;
+    border-radius: 50%;
+}
+
+@mixin borderArea($padding, $margin) {
+    width: $contentsWidthLg;
+    max-width: $maxWidth;
+    padding: $padding;
+    margin: $margin;
+    background-color: $colorWhite;
+    border: 2px solid $accentColor01;
+    border-radius: 5px;
+}

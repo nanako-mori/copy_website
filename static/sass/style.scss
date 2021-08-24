@@ -116,7 +116,7 @@ header {
     background-size: cover;
 }
 
-.howto {
+.section_title {
     @include titleBaseStyle($fontXl);
 }
 
@@ -157,6 +157,54 @@ header {
         strong {
             font-weight: 700;
             background: linear-gradient(transparent 70%, $accentColor01 70%);
+        }
+    }
+}
+
+.about {
+    position: relative;
+    padding: 80px 0 40px 0;
+    background-color: $bgColor01;
+}
+
+.circle {
+    @include circle($accentColor01, $colorWhite);
+    margin: 0 auto;
+}
+
+.about_text {
+    @include titleBaseStyle(20px);
+    margin: 40px 0 10px 0;
+}
+
+.five_skills {
+    @include borderArea(30px, 30px auto);
+}
+
+.skills_title {
+    @include titleBaseStyle(20px);
+    margin-bottom: 10px;
+}
+
+.skills_list {
+    @include flexCenter;
+    align-items: baseline;
+    li {
+        padding: 10px;
+        text-align: center;
+        img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 100%;
+        }
+        p {
+            margin-top: 10px;
+            font-size: $fontXs;
+            color: $textBaseColor;
+            &:last-child {
+                margin-top: 0;
+            }
         }
     }
 }

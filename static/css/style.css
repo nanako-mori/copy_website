@@ -170,7 +170,7 @@ header {
   background-size: cover;
 }
 
-.howto {
+.section_title {
   font-size: 24px;
   font-weight: 600;
   color: #333;
@@ -221,5 +221,81 @@ header {
 .howto_text div strong {
   font-weight: 700;
   background: linear-gradient(transparent 70%, #ebb94d 70%);
+}
+
+.about {
+  position: relative;
+  padding: 80px 0 40px 0;
+  background-color: #fef5e0;
+}
+
+.circle {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  line-height: 80px;
+  color: #fff;
+  text-align: center;
+  background-color: #ebb94d;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.about_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 40px 0 10px 0;
+}
+
+.five_skills {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  padding: 30px;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+
+.skills_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills_list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.skills_list li {
+  padding: 10px;
+  text-align: center;
+}
+
+.skills_list li img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.skills_list li p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+.skills_list li p:last-child {
+  margin-top: 0;
 }
 /*# sourceMappingURL=map/style.css.map */
