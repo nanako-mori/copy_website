@@ -41,7 +41,8 @@ header {
 }
 
 .catch_copy {
-    @include titleBaseStyle($fontXl);
+    @include textBold($fontXl, $textBaseColor);
+    text-align: center;
     p {
         margin-bottom: 10px;
     }
@@ -53,7 +54,8 @@ header {
 }
 
 .title {
-    @include titleBaseStyle($fontMd);
+    @include textBold($fontMd, $textBaseColor);
+    text-align: center;
     h1 {
         font-size: $fontMd;
     }
@@ -62,16 +64,12 @@ header {
 .conversion {
     padding: 30px 0;
     background-color: $accentColor01;
+    @include wrapper(30px 0);
 }
 
 .get_skill {
     @include textBold($fontLg);
     margin-bottom: 10px;
-    text-align: center;
-}
-
-.center {
-    text-align: center;
 }
 
 .attention {
@@ -111,13 +109,13 @@ header {
 
 .introduction {
     height: 587px;
-    padding: 40px 0;
+    @include wrapper;
     background: url(../images/introbottom.jpg) no-repeat;
     background-size: cover;
 }
 
 .section_title {
-    @include titleBaseStyle($fontXl);
+    @include textBold($fontXl, $textBaseColor);
 }
 
 .braces {
@@ -162,8 +160,8 @@ header {
 
 .about {
     position: relative;
-    padding: 80px 0 40px 0;
     background-color: $bgColor01;
+    @include wrapper(80px 0 40px 0);
 }
 
 .circle {
@@ -172,7 +170,7 @@ header {
 }
 
 .about_text {
-    @include titleBaseStyle(20px);
+    @include textBold(20px, $textBaseColor);
     margin: 40px 0 10px 0;
 }
 
@@ -181,7 +179,7 @@ header {
 }
 
 .skills_title {
-    @include titleBaseStyle(20px);
+    @include textBold(20px, $textBaseColor);
     margin-bottom: 10px;
 }
 
@@ -277,7 +275,7 @@ header {
 }
 
 .ability_title {
-    @include titleBaseStyle(28px);
+    @include textBold(28px, $textBaseColor);
     margin: 20px auto 35px;
     span {
         font-size: $fontMd;

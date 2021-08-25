@@ -21,6 +21,11 @@ $contentsWidthLg: 1170px;
 $maxWidth: calc(100% - 40px);
 $maxWidthLg: calc(100% - 20px);
 
+@mixin wrapper($padding: 40px 0) {
+    padding: $padding;
+    text-align: center;
+}
+
 @mixin contactBtn($radius: 25px, $padding: 11px 40px) {
     padding: $padding;
     color: $colorWhite;
@@ -35,13 +40,6 @@ $maxWidthLg: calc(100% - 20px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-@mixin titleBaseStyle($font) {
-    font-size: $font;
-    font-weight: 600;
-    color: $textBaseColor;
-    text-align: center;
 }
 
 @mixin textBold($font, $color: #{$colorWhite}) {
@@ -89,9 +87,4 @@ $maxWidthLg: calc(100% - 20px);
     background-color: $colorWhite;
     border: 2px solid $accentColor01;
     border-radius: 5px;
-}
-
-@mixin wrapper($padding: 40px 0) {
-    padding: $padding;
-    text-align: center;
 }

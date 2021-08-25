@@ -91,6 +91,8 @@ header {
 .conversion {
   padding: 30px 0;
   background-color: #ebb94d;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .get_skill {
@@ -98,11 +100,6 @@ header {
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
-  text-align: center;
-}
-
-.center {
-  text-align: center;
 }
 
 .attention {
@@ -166,6 +163,7 @@ header {
 .introduction {
   height: 587px;
   padding: 40px 0;
+  text-align: center;
   background: url(../images/introbottom.jpg) no-repeat;
   background-size: cover;
 }
@@ -174,7 +172,6 @@ header {
   font-size: 24px;
   font-weight: 600;
   color: #333;
-  text-align: center;
 }
 
 .braces {
@@ -225,8 +222,9 @@ header {
 
 .about {
   position: relative;
-  padding: 80px 0 40px 0;
   background-color: #fef5e0;
+  padding: 80px 0 40px 0;
+  text-align: center;
 }
 
 .circle {
@@ -249,7 +247,6 @@ header {
   font-size: 20px;
   font-weight: 600;
   color: #333;
-  text-align: center;
   margin: 40px 0 10px 0;
 }
 
@@ -268,7 +265,6 @@ header {
   font-size: 20px;
   font-weight: 600;
   color: #333;
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -386,7 +382,6 @@ header {
   font-size: 28px;
   font-weight: 600;
   color: #333;
-  text-align: center;
   margin: 20px auto 35px;
 }
 
