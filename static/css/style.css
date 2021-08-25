@@ -263,7 +263,8 @@ header {
   border-radius: 5px;
 }
 
-.skills_title {
+.skills_title,
+.study_subtitle {
   font-size: 20px;
   font-weight: 600;
   color: #333;
@@ -297,5 +298,82 @@ header {
 
 .skills_list li p:last-child {
   margin-top: 0;
+}
+
+.study {
+  padding: 40px 0;
+  text-align: center;
+  background: url(../images/aboutsecondbg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.study_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto;
+}
+
+.study_subtitle {
+  color: #fff;
+}
+
+.colored_strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ebb94d;
+}
+
+.step_wrapper {
+  width: 1170px;
+  margin: 30px auto 0;
+}
+
+.step_list {
+  display: flex;
+  justify-content: center;
+}
+
+.step_list li {
+  width: 32%;
+  padding: 30px 30px 20px;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.step_list li p:nth-of-type(1) {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.step_list li p:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.step_list li:nth-of-type(2) {
+  margin: 0 1.5%;
+}
+
+.step_title {
+  margin-bottom: 30px;
+  background-color: #ebb94d;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.catch_copy02 {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #016ea9;
+}
+
+.catch_copy02 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
 }
 /*# sourceMappingURL=map/style.css.map */

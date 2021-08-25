@@ -44,10 +44,10 @@ $maxWidthLg: calc(100% - 20px);
     text-align: center;
 }
 
-@mixin textWhiteBold($font) {
+@mixin textBold($font, $color: #{$colorWhite}) {
     font-size: $font;
     font-weight: 600;
-    color: $colorWhite;
+    color: $color;
 }
 
 @mixin flexCenter {

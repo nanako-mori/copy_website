@@ -65,7 +65,7 @@ header {
 }
 
 .get_skill {
-    @include textWhiteBold($fontLg);
+    @include textBold($fontLg);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -84,14 +84,14 @@ header {
 
 .contact_btn_lg {
     @include contactBtn(50px, 25px 50px);
-    @include textWhiteBold(28px);
+    @include textBold(28px);
     display: block;
     max-width: 1028px;
     margin: 45px auto;
 }
 
 .period {
-    @include textWhiteBold(21px);
+    @include textBold(21px);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -206,5 +206,71 @@ header {
                 margin-top: 0;
             }
         }
+    }
+}
+
+.study {
+    padding: 40px 0;
+    text-align: center;
+    background: url(../images/aboutsecondbg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.study_title {
+    @include textBold(28px);
+    margin: 20px auto;
+}
+
+.study_subtitle {
+    @extend .skills_title;
+    color: $colorWhite;
+}
+
+.colored_strong {
+    @include textBold(20px, $accentColor01);
+}
+
+.step_wrapper {
+    width: $contentsWidthLg;
+    margin: 30px auto 0;
+}
+
+.step_list {
+    @include flexCenter;
+    li {
+        width: 32%;
+        padding: 30px 30px 20px;
+        font-weight: 600;
+        background-color: $colorWhite;
+        border-radius: 5px;
+        p {
+            &:nth-of-type(1) {
+                margin-bottom: 15px;
+                font-size: $fontSm;
+            }
+            &:nth-of-type(2) {
+                margin-bottom: 10px;
+            }
+        }
+        &:nth-of-type(2) {
+            margin: 0 1.5%;
+        }
+    }
+}
+
+.step_title {
+    margin-bottom: 30px;
+    background-color: $accentColor01;
+    border-radius: 5px;
+    @include textBold($fontMd);
+}
+
+.catch_copy02 {
+    padding: 40px 0;
+    text-align: center;
+    background-color: $accentColor03;
+    p {
+        @include textBold(20px);
     }
 }
