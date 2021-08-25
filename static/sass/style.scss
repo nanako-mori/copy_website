@@ -148,10 +148,9 @@ header {
 }
 
 .howto_text {
-    padding: 40px 0;
     font-size: 20px;
     color: $textBaseColor;
-    text-align: center;
+    @include wrapper;
     div {
         margin-bottom: 24px;
         strong {
@@ -210,8 +209,7 @@ header {
 }
 
 .study {
-    padding: 40px 0;
-    text-align: center;
+    @include wrapper;
     background: url(../images/aboutsecondbg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
@@ -267,10 +265,46 @@ header {
 }
 
 .catch_copy02 {
-    padding: 40px 0;
-    text-align: center;
+    @include wrapper;
     background-color: $accentColor03;
     p {
         @include textBold(20px);
     }
+}
+
+.get_ability {
+    @include wrapper;
+}
+
+.ability_title {
+    @include titleBaseStyle(28px);
+    margin: 20px auto 35px;
+    span {
+        font-size: $fontMd;
+    }
+}
+
+.ability_caption {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: $textBaseColor;
+}
+
+.ability_list {
+    @include flexCenter;
+    width: $contentsWidth;
+    max-width: $maxWidth;
+    margin: 40px auto;
+    li {
+        width: 25%;
+        padding: 0 15px;
+        img {
+            width: 180px;
+            height: auto;
+        }
+    }
+}
+
+.ability_caption02 {
+    @include textBold($fontMd, $textBaseColor);
 }

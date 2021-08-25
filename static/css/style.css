@@ -208,9 +208,9 @@ header {
 }
 
 .howto_text {
-  padding: 40px 0;
   font-size: 20px;
   color: #333;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -375,5 +375,52 @@ header {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+}
+
+.get_ability {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.ability_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px auto 35px;
+}
+
+.ability_title span {
+  font-size: 16px;
+}
+
+.ability_caption {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.ability_list {
+  display: flex;
+  justify-content: center;
+  width: 860px;
+  max-width: calc(100% - 40px);
+  margin: 40px auto;
+}
+
+.ability_list li {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.ability_list li img {
+  width: 180px;
+  height: auto;
+}
+
+.ability_caption02 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
 }
 /*# sourceMappingURL=map/style.css.map */

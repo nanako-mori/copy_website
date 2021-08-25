@@ -90,3 +90,8 @@ $maxWidthLg: calc(100% - 20px);
     border: 2px solid $accentColor01;
     border-radius: 5px;
 }
+
+@mixin wrapper($padding: 40px 0) {
+    padding: $padding;
+    text-align: center;
+}
