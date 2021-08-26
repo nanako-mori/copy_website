@@ -306,3 +306,74 @@ header {
 .ability_caption02 {
     @include textBold($fontMd, $textBaseColor);
 }
+
+.merits {
+    @include wrapper;
+    background-color: $bgColor01;
+}
+
+.merits_title {
+    p {
+        @include textBold(20px, $textBaseColor);
+        &:nth-of-type(2) {
+            font-size: 28px;
+        }
+    }
+}
+
+.merits_wrapper {
+    width: $contentsWidthLg;
+    margin: 40px auto 0;
+}
+
+.merits_list {
+    @include flexCenter;
+    li {
+        width: 33.333%;
+        padding: 0 15px;
+        img {
+            width: 360px;
+            height: auto;
+        }
+        h3,
+        p {
+            margin: 8px 0;
+        }
+    }
+}
+
+.merits_item {
+    font-size: $fontMd;
+    color: $textBaseColor;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.support {
+    @include borderArea(40px 20px, 40px auto);
+}
+
+.support_title,
+.make_team,
+.after_course {
+    margin-bottom: 10px;
+}
+
+.support_title {
+    @include textBold(28px, $accentColor01);
+}
+
+.make_team {
+    @include textBold(20px, $textBaseColor);
+}
+
+.after_course {
+    @include textBold(16px, $textBaseColor);
+}
+
+.notes {
+    font-size: $fontSm;
+    color: $textBaseColor;
+}

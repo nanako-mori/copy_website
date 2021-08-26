@@ -418,4 +418,93 @@ header {
   font-weight: 600;
   color: #333;
 }
+
+.merits {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fef5e0;
+}
+
+.merits_title p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.merits_title p:nth-of-type(2) {
+  font-size: 28px;
+}
+
+.merits_wrapper {
+  width: 1170px;
+  margin: 40px auto 0;
+}
+
+.merits_list {
+  display: flex;
+  justify-content: center;
+}
+
+.merits_list li {
+  width: 33.333%;
+  padding: 0 15px;
+}
+
+.merits_list li img {
+  width: 360px;
+  height: auto;
+}
+
+.merits_list li h3,
+.merits_list li p {
+  margin: 8px 0;
+}
+
+.merits_item {
+  font-size: 16px;
+  color: #333;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.support {
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  padding: 40px 20px;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+
+.support_title,
+.make_team,
+.after_course {
+  margin-bottom: 10px;
+}
+
+.support_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ebb94d;
+}
+
+.make_team {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.after_course {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.notes {
+  font-size: 14px;
+  color: #333;
+}
 /*# sourceMappingURL=map/style.css.map */
