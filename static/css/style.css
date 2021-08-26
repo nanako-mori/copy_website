@@ -507,4 +507,66 @@ header {
   font-size: 14px;
   color: #333;
 }
+
+.members {
+  padding: 40px 0;
+  text-align: center;
+  background: url(../images/teacherbg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.members_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto 10px;
+}
+
+.start_members {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.members_list {
+  display: flex;
+  justify-content: center;
+  max-width: 1170px;
+  padding-top: calc(163px + 40px);
+  margin: 0 auto;
+}
+
+.members_list li {
+  position: relative;
+  width: 33.333%;
+  padding: 0 15px;
+}
+
+.members_list li img {
+  position: absolute;
+  top: -163px;
+  left: calc(50% - 198px / 2);
+  width: 198px;
+  height: 198px;
+  border-radius: 50%;
+}
+
+.members_list li p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.members_list li:last-child .text_left p:first-child {
+  margin-bottom: 20px;
+}
+
+.solid_border {
+  min-height: 391px;
+  padding: 40px;
+  border: 3px solid #fff;
+}
 /*# sourceMappingURL=map/style.css.map */

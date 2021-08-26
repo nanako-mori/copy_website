@@ -377,3 +377,61 @@ header {
     font-size: $fontSm;
     color: $textBaseColor;
 }
+
+.members {
+    @include wrapper;
+    background: url(../images/teacherbg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.members_title {
+    @include textBold(28px, $colorWhite);
+    margin: 20px auto 10px;
+}
+
+.start_members {
+    @include textBold($fontMd, $colorWhite);
+    margin-bottom: 10px;
+}
+
+.members_list {
+    @include flexCenter;
+    max-width: $contentsWidthLg;
+    padding-top: calc(163px + 40px);
+    margin: 0 auto;
+    li {
+        position: relative;
+        width: 33.333%;
+        padding: 0 15px;
+        img {
+            position: absolute;
+            top: -163px;
+            left: calc(50% - 198px / 2);
+            width: 198px;
+            height: 198px;
+            border-radius: 50%;
+        }
+        p {
+            margin-bottom: 10px;
+            font-size: $fontMd;
+            font-weight: 300;
+            color: $colorWhite;
+        }
+        &:last-child {
+            .text_left {
+                p {
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.solid_border {
+    min-height: 391px;
+    padding: 40px;
+    border: 3px solid $colorWhite;
+}
