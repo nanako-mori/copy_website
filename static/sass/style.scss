@@ -41,7 +41,7 @@ header {
 }
 
 .catch_copy {
-    @include textBold($fontXl, $textBaseColor);
+    @include textBold($fontXl);
     text-align: center;
     p {
         margin-bottom: 10px;
@@ -54,7 +54,7 @@ header {
 }
 
 .title {
-    @include textBold($fontMd, $textBaseColor);
+    @include textBold($fontMd);
     text-align: center;
     h1 {
         font-size: $fontMd;
@@ -68,7 +68,7 @@ header {
 }
 
 .get_skill {
-    @include textBold($fontLg);
+    @include textBold($fontLg, $colorWhite);
     margin-bottom: 10px;
 }
 
@@ -82,14 +82,14 @@ header {
 
 .contact_btn_lg {
     @include contactBtn(50px, 25px 50px);
-    @include textBold(28px);
+    @include textBold(28px, $colorWhite);
     display: block;
     max-width: 1028px;
     margin: 45px auto;
 }
 
 .period {
-    @include textBold(21px);
+    @include textBold(21px, $colorWhite);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -115,7 +115,7 @@ header {
 }
 
 .section_title {
-    @include textBold($fontXl, $textBaseColor);
+    @include textBold($fontXl);
 }
 
 .braces {
@@ -170,7 +170,7 @@ header {
 }
 
 .about_text {
-    @include textBold(20px, $textBaseColor);
+    @include textBold(20px);
     margin: 40px 0 10px 0;
 }
 
@@ -179,7 +179,7 @@ header {
 }
 
 .skills_title {
-    @include textBold(20px, $textBaseColor);
+    @include textBold(20px);
     margin-bottom: 10px;
 }
 
@@ -214,7 +214,7 @@ header {
 }
 
 .study_title {
-    @include textBold(28px);
+    @include textBold(28px, $colorWhite);
     margin: 20px auto;
 }
 
@@ -259,14 +259,14 @@ header {
     margin-bottom: 30px;
     background-color: $accentColor01;
     border-radius: 5px;
-    @include textBold($fontMd);
+    @include textBold($fontMd, $colorWhite);
 }
 
 .catch_copy02 {
     @include wrapper;
     background-color: $accentColor03;
     p {
-        @include textBold(20px);
+        @include textBold(20px, $colorWhite);
     }
 }
 
@@ -275,7 +275,7 @@ header {
 }
 
 .ability_title {
-    @include textBold(28px, $textBaseColor);
+    @include textBold(28px);
     margin: 20px auto 35px;
     span {
         font-size: $fontMd;
@@ -304,7 +304,7 @@ header {
 }
 
 .ability_caption02 {
-    @include textBold($fontMd, $textBaseColor);
+    @include textBold($fontMd);
 }
 
 .merits {
@@ -314,7 +314,7 @@ header {
 
 .merits_title {
     p {
-        @include textBold(20px, $textBaseColor);
+        @include textBold(20px);
         &:nth-of-type(2) {
             font-size: 28px;
         }
@@ -366,11 +366,11 @@ header {
 }
 
 .make_team {
-    @include textBold(20px, $textBaseColor);
+    @include textBold(20px);
 }
 
 .after_course {
-    @include textBold(16px, $textBaseColor);
+    @include textBold(16px);
 }
 
 .notes {
