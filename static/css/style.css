@@ -486,7 +486,8 @@ header {
 .support_title,
 .make_team,
 .after_course,
-.possible {
+.possible,
+.learn_caption {
   margin-bottom: 10px;
 }
 
@@ -664,5 +665,63 @@ header {
   font-size: 15px;
   font-style: italic;
   text-decoration: underline;
+}
+
+.learn {
+  padding: 40px 0;
+  text-align: center;
+  background: url(../images/classbg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.learn_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto 10px;
+}
+
+.learn_caption {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 780px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+dl {
+  width: 50%;
+  background-color: #fff;
+  border: 2px solid #016ea9;
+  border-radius: 5px;
+}
+
+dl:first-child {
+  margin-right: 30px;
+}
+
+dl dt {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #016ea9;
+}
+
+dl dd {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  padding: 10px;
+  border-bottom: 1px dotted #e5e5e5;
 }
 /*# sourceMappingURL=map/style.css.map */

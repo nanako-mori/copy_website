@@ -362,7 +362,8 @@ header {
 .support_title,
 .make_team,
 .after_course,
-.possible {
+.possible,
+.learn_caption {
     margin-bottom: 10px;
 }
 
@@ -518,4 +519,49 @@ header {
     font-size: 15px;
     font-style: italic;
     text-decoration: underline;
+}
+
+.learn {
+    @include wrapper;
+    background: url(../images/classbg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.learn_title {
+    @include textBold(28px, $colorWhite);
+    margin: 20px auto 10px;
+}
+
+.learn_caption {
+    @include textBold($fontMd, $colorWhite);
+}
+
+.course {
+    @include flexCenter;
+    align-items: flex-start;
+    max-width: 780px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+dl {
+    width: 50%;
+    background-color: $colorWhite;
+    border: 2px solid $accentColor03;
+    border-radius: 5px;
+    &:first-child {
+        margin-right: 30px;
+    }
+    dt {
+        @include textBold(20px, $colorWhite);
+        padding: 15px;
+        margin-bottom: 10px;
+        background-color: $accentColor03;
+    }
+    dd {
+        @include textBold($fontMd, #000);
+        padding: 10px;
+        border-bottom: 1px dotted #e5e5e5;
+    }
 }
