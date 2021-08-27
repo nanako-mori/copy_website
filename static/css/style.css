@@ -724,4 +724,65 @@ dl dd {
   padding: 10px;
   border-bottom: 1px dotted #e5e5e5;
 }
+
+.flow {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.flow_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px auto 10;
+}
+
+.flow_image {
+  max-width: 100%;
+  margin: 40px auto;
+}
+
+.flow_list li {
+  display: flex;
+  align-items: center;
+  width: 1170px;
+  max-width: calc(100% - 40px);
+  padding: 10px 35px;
+  margin: 0 auto;
+  color: #333;
+  background-color: #fef5e0;
+  border-radius: 10px;
+}
+
+.flow_list li:nth-of-type(2n) {
+  padding: 0;
+  background-color: transparent;
+}
+
+.flow_list li:nth-of-type(2n) img {
+  display: block;
+  margin: 0 auto;
+}
+
+.flow_icon {
+  flex-shrink: 0;
+  width: 200px;
+  padding: 20px;
+}
+
+.flow_icon h3 {
+  font-size: 18px;
+}
+
+.flow_detail p {
+  margin: 20px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.flow_detail .bold {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
 /*# sourceMappingURL=map/style.css.map */

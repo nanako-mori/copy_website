@@ -565,3 +565,59 @@ dl {
         border-bottom: 1px dotted #e5e5e5;
     }
 }
+
+.flow {
+    @include wrapper;
+}
+
+.flow_title {
+    @include textBold(28px);
+    margin: 20px auto 10;
+}
+
+.flow_image {
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.flow_list {
+    li {
+        display: flex;
+        align-items: center;
+        width: $contentsWidthLg;
+        max-width: $maxWidth;
+        padding: 10px 35px;
+        margin: 0 auto;
+        color: $textBaseColor;
+        background-color: $bgColor01;
+        border-radius: 10px;
+        &:nth-of-type(2n) {
+            padding: 0;
+            background-color: transparent;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.flow_icon {
+    flex-shrink: 0;
+    width: 200px;
+    padding: 20px;
+    h3 {
+        font-size: $fontLg;
+    }
+}
+
+.flow_detail {
+    p {
+        margin: 20px 0;
+        font-size: $fontSm;
+        text-align: left;
+    }
+    .bold {
+        @include textBold($fontMd);
+    }
+}
