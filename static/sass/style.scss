@@ -166,6 +166,10 @@ header {
 
 .circle {
     @include circle($accentColor01, $colorWhite);
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
     margin: 0 auto;
 }
 
@@ -357,7 +361,8 @@ header {
 
 .support_title,
 .make_team,
-.after_course {
+.after_course,
+.possible {
     margin-bottom: 10px;
 }
 
@@ -369,11 +374,12 @@ header {
     @include textBold(20px);
 }
 
+.evidence,
 .after_course {
     @include textBold(16px);
 }
 
-.notes {
+.text_sm {
     font-size: $fontSm;
     color: $textBaseColor;
 }
@@ -434,4 +440,82 @@ header {
     min-height: 391px;
     padding: 40px;
     border: 3px solid $colorWhite;
+}
+
+.become_nomad {
+    @include wrapper;
+    position: relative;
+    color: $colorWhite;
+    background-color: $accentColor01;
+    &::after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -25px;
+        content: " ";
+        border: 25px solid transparent;
+        border-top-color: $accentColor01;
+    }
+}
+
+.circle02 {
+    @include circle($colorWhite, $accentColor01);
+    margin: 0 auto;
+}
+
+.braces02 {
+    @extend .braces;
+    &::before {
+        border-top: 4px solid $colorWhite;
+        border-left: 4px solid $colorWhite;
+    }
+    &::after {
+        border-right: 4px solid $colorWhite;
+        border-bottom: 4px solid $colorWhite;
+    }
+}
+
+.answer {
+    @include wrapper;
+}
+
+.possible {
+    @include textBold(28px);
+}
+
+.evidence {
+    margin-bottom: 30px;
+}
+
+.voices_list {
+    width: 780px;
+    padding-top: 10px;
+    margin: 0 auto;
+    li {
+        @include flexCenter;
+        padding: 20px 0;
+        img {
+            width: 239px;
+            height: 239px;
+            border: 3px solid $accentColor01;
+        }
+    }
+}
+
+.voices_detail {
+    width: calc(100% - 239px);
+    padding-left: 30px;
+    margin: 15px 10px;
+    font-size: $fontLg;
+    color: #777;
+    text-align: left;
+}
+
+.degree {
+    margin-top: 8px;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
 }

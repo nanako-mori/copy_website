@@ -65,13 +65,8 @@ $maxWidthLg: calc(100% - 20px);
 }
 
 @mixin circle($bgcolor, $color) {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    left: 0;
     width: 80px;
     height: 80px;
-    margin: auto;
     line-height: 80px;
     color: $color;
     text-align: center;
