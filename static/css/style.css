@@ -785,4 +785,46 @@ dl dd {
   font-weight: 600;
   color: #333;
 }
+
+.bangkok {
+  padding: 80px 80px;
+  background: url(../images/bangkokbg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bangkok_title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.why_bangkok {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.reasons {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.reasons li {
+  margin-bottom: 10px;
+}
+
+.reasons li:last-child {
+  margin-bottom: 20px;
+}
+
+.bangkok_caption {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=map/style.css.map */

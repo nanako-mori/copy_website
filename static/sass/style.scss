@@ -621,3 +621,37 @@ dl {
         @include textBold($fontMd);
     }
 }
+
+.bangkok {
+    padding: 80px 80px;
+    background: url(../images/bangkokbg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bangkok_title {
+    @include textBold($fontXl, $colorWhite);
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.why_bangkok {
+    margin-bottom: 20px;
+    font-size: $fontSm;
+    color: $colorWhite;
+}
+
+.reasons {
+    @include textBold($fontMd, $colorWhite);
+    li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.bangkok_caption {
+    @include textBold(20px, $colorWhite);
+    margin-bottom: 10px;
+}
