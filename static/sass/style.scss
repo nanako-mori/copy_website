@@ -655,3 +655,73 @@ dl {
     @include textBold(20px, $colorWhite);
     margin-bottom: 10px;
 }
+
+.benefits {
+    @include wrapper;
+    background-color: #f7c23c;
+}
+
+.benefits_title {
+    @include textBold(28px);
+    margin: 20px auto 40px;
+}
+
+.permanent {
+    @include textBold($fontMd);
+    margin-bottom: 10px;
+    span {
+        color: $colorWhite;
+    }
+}
+
+.solid_border02_bg {
+    position: relative;
+    bottom: -58px;
+    width: 45%;
+    margin: 0 auto;
+    background-color: #f7c23c;
+}
+
+.virtually_free {
+    @extend .possible;
+}
+
+.solid_border02 {
+    width: $contentsWidthLg;
+    padding: 40px;
+    margin: 40px auto 0;
+    border: 2px solid $colorWhite;
+}
+
+.benefits_list {
+    @include flexCenter;
+    li {
+        width: 33.333%;
+    }
+}
+
+.circle03 {
+    @include flexCenter;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: $colorWhite;
+    border-radius: 50%;
+}
+
+.circle03_inner {
+    padding: 15px;
+    h4 {
+        margin-bottom: 10px;
+        font-size: $fontXl;
+        font-weight: 300;
+        color: $accentColor01;
+    }
+    p {
+        margin-bottom: 10px;
+        font-size: $fontSm;
+        font-weight: 600;
+        color: $textBaseColor;
+    }
+}

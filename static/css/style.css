@@ -487,6 +487,7 @@ header {
 .make_team,
 .after_course,
 .possible,
+.virtually_free,
 .learn_caption {
   margin-bottom: 10px;
 }
@@ -623,7 +624,8 @@ header {
   text-align: center;
 }
 
-.possible {
+.possible,
+.virtually_free {
   font-size: 28px;
   font-weight: 600;
   color: #333;
@@ -826,5 +828,82 @@ dl dd {
   font-weight: 600;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.benefits {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f7c23c;
+}
+
+.benefits_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px auto 40px;
+}
+
+.permanent {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.permanent span {
+  color: #fff;
+}
+
+.solid_border02_bg {
+  position: relative;
+  bottom: -58px;
+  width: 45%;
+  margin: 0 auto;
+  background-color: #f7c23c;
+}
+
+.solid_border02 {
+  width: 1170px;
+  padding: 40px;
+  margin: 40px auto 0;
+  border: 2px solid #fff;
+}
+
+.benefits_list {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits_list li {
+  width: 33.333%;
+}
+
+.circle03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.circle03_inner {
+  padding: 15px;
+}
+
+.circle03_inner h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #ebb94d;
+}
+
+.circle03_inner p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
 }
 /*# sourceMappingURL=map/style.css.map */
