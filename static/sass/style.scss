@@ -2,6 +2,25 @@
 @import "reset";
 @import "settings";
 
+// 汎用クラス
+
+.text_sm {
+    font-size: $fontSm;
+    color: $textBaseColor;
+}
+
+.text_xl {
+    @include textBold(28px);
+}
+
+.text_xl_white {
+    @include textBold(28px, $colorWhite);
+}
+
+.text_left {
+    text-align: left;
+}
+
 header {
     // flexCenterを使用する
     display: flex;
@@ -82,7 +101,7 @@ header {
 
 .contact_btn_lg {
     @include contactBtn(50px, 25px 50px);
-    @include textBold(28px, $colorWhite);
+    @extend .text_xl_white;
     display: block;
     max-width: 1028px;
     margin: 45px auto;
@@ -218,7 +237,7 @@ header {
 }
 
 .study_title {
-    @include textBold(28px, $colorWhite);
+    @extend .text_xl_white;
     margin: 20px auto;
 }
 
@@ -279,7 +298,7 @@ header {
 }
 
 .ability_title {
-    @include textBold(28px);
+    @extend .text_xl;
     margin: 20px auto 35px;
     span {
         font-size: $fontMd;
@@ -351,10 +370,6 @@ header {
     color: $textBaseColor;
 }
 
-.text_left {
-    text-align: left;
-}
-
 .support {
     @include borderArea(40px 20px, 40px auto);
 }
@@ -380,11 +395,6 @@ header {
     @include textBold(16px);
 }
 
-.text_sm {
-    font-size: $fontSm;
-    color: $textBaseColor;
-}
-
 .members {
     @include wrapper;
     background: url(../images/teacherbg.jpg) no-repeat;
@@ -393,7 +403,7 @@ header {
 }
 
 .members_title {
-    @include textBold(28px, $colorWhite);
+    @extend .text_xl_white;
     margin: 20px auto 10px;
 }
 
@@ -482,10 +492,6 @@ header {
     @include wrapper;
 }
 
-.possible {
-    @include textBold(28px);
-}
-
 .evidence {
     margin-bottom: 30px;
 }
@@ -529,7 +535,7 @@ header {
 }
 
 .learn_title {
-    @include textBold(28px, $colorWhite);
+    @extend .text_xl_white;
     margin: 20px auto 10px;
 }
 
@@ -571,7 +577,7 @@ dl {
 }
 
 .flow_title {
-    @include textBold(28px);
+    @extend .text_xl;
     margin: 20px auto 10;
 }
 
@@ -662,7 +668,7 @@ dl {
 }
 
 .benefits_title {
-    @include textBold(28px);
+    @extend .text_xl;
     margin: 20px auto 40px;
 }
 
@@ -733,16 +739,7 @@ dl {
     background-size: cover;
 }
 
-// TO DO: クラス名を汎用性の高いものに変更する
-.not_volunteer {
-    @extend .study_title;
-}
-
 .value_detail {
     @include textBold(20px, $colorWhite);
     margin-bottom: 40px;
-}
-
-.produce {
-    @include textBold(28px, $colorWhite);
 }

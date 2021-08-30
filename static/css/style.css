@@ -17,6 +17,34 @@ ul {
   list-style-type: none;
 }
 
+.text_sm {
+  font-size: 14px;
+  color: #333;
+}
+
+.text_xl,
+.benefits_title,
+.flow_title,
+.ability_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text_xl_white,
+.learn_title,
+.members_title,
+.study_title,
+.contact_btn_lg {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text_left {
+  text-align: left;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -116,9 +144,6 @@ header {
   text-align: center;
   background-color: #da6b64;
   border-radius: 50px;
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
   display: block;
   max-width: 1028px;
   margin: 45px auto;
@@ -308,11 +333,7 @@ header {
   background-size: cover;
 }
 
-.study_title,
-.not_volunteer {
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
+.study_title {
   margin: 20px auto;
 }
 
@@ -384,9 +405,6 @@ header {
 }
 
 .ability_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333;
   margin: 20px auto 35px;
 }
 
@@ -470,10 +488,6 @@ header {
   color: #333;
 }
 
-.text_left {
-  text-align: left;
-}
-
 .support {
   width: 1170px;
   max-width: calc(100% - 40px);
@@ -512,11 +526,6 @@ header {
   color: #333;
 }
 
-.text_sm {
-  font-size: 14px;
-  color: #333;
-}
-
 .members {
   padding: 40px 0;
   text-align: center;
@@ -526,9 +535,6 @@ header {
 }
 
 .members_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
   margin: 20px auto 10px;
 }
 
@@ -625,13 +631,6 @@ header {
   text-align: center;
 }
 
-.possible,
-.virtually_free {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333;
-}
-
 .evidence {
   margin-bottom: 30px;
 }
@@ -679,9 +678,6 @@ header {
 }
 
 .learn_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
   margin: 20px auto 10px;
 }
 
@@ -734,9 +730,6 @@ dl dd {
 }
 
 .flow_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333;
   margin: 20px auto 10;
 }
 
@@ -838,9 +831,6 @@ dl dd {
 }
 
 .benefits_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333;
   margin: 20px auto 40px;
 }
 
@@ -921,11 +911,5 @@ dl dd {
   font-weight: 600;
   color: #fff;
   margin-bottom: 40px;
-}
-
-.produce {
-  font-size: 28px;
-  font-weight: 600;
-  color: #fff;
 }
 /*# sourceMappingURL=map/style.css.map */
