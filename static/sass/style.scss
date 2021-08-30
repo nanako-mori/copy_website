@@ -743,3 +743,46 @@ dl {
     @include textBold(20px, $colorWhite);
     margin-bottom: 40px;
 }
+
+.message {
+    @include wrapper;
+}
+
+.message_title {
+    @extend .text_xl;
+    margin-bottom: 35px;
+}
+
+.enjoy_nomad {
+    @include textBold(20px);
+    margin-bottom: 10px;
+}
+
+.message_wrap {
+    @include flexCenter;
+    width: $contentsWidth;
+    max-width: 1028px;
+    margin: 40px auto;
+}
+
+.founder {
+    width: 25%;
+    padding: 0 15px;
+    img {
+        width: 100%;
+    }
+}
+
+.message_detail {
+    width: 75%;
+    padding: 0 15px;
+    font-size: $fontSm;
+    color: $textBaseColor;
+    text-align: left;
+    p {
+        margin-bottom: 10px;
+    }
+    ul {
+        margin: 21px auto;
+    }
+}

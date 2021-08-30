@@ -23,6 +23,7 @@ ul {
 }
 
 .text_xl,
+.message_title,
 .benefits_title,
 .flow_title,
 .ability_title {
@@ -911,5 +912,54 @@ dl dd {
   font-weight: 600;
   color: #fff;
   margin-bottom: 40px;
+}
+
+.message {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.message_title {
+  margin-bottom: 35px;
+}
+
+.enjoy_nomad {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.message_wrap {
+  display: flex;
+  justify-content: center;
+  width: 860px;
+  max-width: 1028px;
+  margin: 40px auto;
+}
+
+.founder {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.founder img {
+  width: 100%;
+}
+
+.message_detail {
+  width: 75%;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.message_detail p {
+  margin-bottom: 10px;
+}
+
+.message_detail ul {
+  margin: 21px auto;
 }
 /*# sourceMappingURL=map/style.css.map */
