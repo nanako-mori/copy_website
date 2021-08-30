@@ -725,3 +725,24 @@ dl {
         color: $textBaseColor;
     }
 }
+
+.maximum_value {
+    @include wrapper;
+    background: url(../images/specialdetail.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// TO DO: クラス名を汎用性の高いものに変更する
+.not_volunteer {
+    @extend .study_title;
+}
+
+.value_detail {
+    @include textBold(20px, $colorWhite);
+    margin-bottom: 40px;
+}
+
+.produce {
+    @include textBold(28px, $colorWhite);
+}

@@ -308,7 +308,8 @@ header {
   background-size: cover;
 }
 
-.study_title {
+.study_title,
+.not_volunteer {
   font-size: 28px;
   font-weight: 600;
   color: #fff;
@@ -905,5 +906,26 @@ dl dd {
   font-size: 14px;
   font-weight: 600;
   color: #333;
+}
+
+.maximum_value {
+  padding: 40px 0;
+  text-align: center;
+  background: url(../images/specialdetail.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.value_detail {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.produce {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
 }
 /*# sourceMappingURL=map/style.css.map */
