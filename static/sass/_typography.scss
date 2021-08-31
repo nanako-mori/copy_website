@@ -1,0 +1,147 @@
+@import "settings";
+
+/* 文字、行間、書体、文字色、太さに関するスタイル */
+.text_sm {
+    font-size: $fontSm;
+    color: $textBaseColor;
+}
+
+.text_md {
+    @include textBold($fontMd);
+}
+
+.text_md_white {
+    @include textBold($fontMd, $colorWhite);
+}
+
+.text_lg_thin {
+    @include defaultText(20px);
+}
+
+.text_lg {
+    @include textBold(20px);
+}
+
+.text_lg_white {
+    @include textBold(20px, $colorWhite);
+}
+
+.text_xl {
+    @include textBold(28px);
+}
+
+.text_xl_white {
+    @include textBold(28px, $colorWhite);
+}
+
+.text_left {
+    text-align: left;
+}
+
+.colored_strong {
+    @include textBold(20px, $accentColor01);
+}
+
+.title_xl {
+    @include textBold($fontXl);
+}
+
+.main_title {
+    font-size: $fontMd;
+}
+
+.get_skill {
+    @include textBold($fontLg, $colorWhite);
+    @extend .u_mb_sm;
+}
+
+.period {
+    @include textBold(21px, $colorWhite);
+    @extend .u_mb_sm;
+}
+
+.about_text {
+    @extend .text_lg;
+    margin: 40px 0 10px 0;
+}
+
+.step_title {
+    @extend .text_md_white;
+    @extend .u_mb_lg;
+    background-color: $accentColor01;
+    border-radius: 5px;
+}
+
+.ability_title {
+    @extend .text_xl;
+    margin: 20px auto 35px;
+    span {
+        font-size: $fontMd;
+    }
+}
+
+.merits_title {
+    p {
+        @extend .text_lg;
+        &:nth-of-type(2) {
+            font-size: 28px;
+        }
+    }
+}
+
+.merits_item {
+    @include defaultText;
+}
+
+.support_title {
+    @extend .colored_strong;
+    @extend .u_mb_sm;
+    font-size: 28px;
+}
+
+.flow_detail {
+    p {
+        margin: 20px 0;
+        font-size: $fontSm;
+        text-align: left;
+    }
+}
+
+.bangkok_title {
+    @include textBold($fontXl, $colorWhite);
+    @extend .u_mb_md;
+    letter-spacing: 3px;
+}
+
+.why_bangkok {
+    @include defaultText($fontSm, $colorWhite);
+    @extend .u_mb_md;
+}
+
+.reasons {
+    @extend .text_md_white;
+    li {
+        @extend .u_mb_sm;
+        &:last-child {
+            @extend .u_mb_md;
+        }
+    }
+}
+
+.benefits_title {
+    @extend .text_xl;
+    margin: 20px auto 40px;
+}
+
+.permanent {
+    @include textBold($fontMd);
+    margin-bottom: 10px;
+    span {
+        color: $colorWhite;
+    }
+}
+
+.message_title {
+    @extend .text_xl;
+    margin-bottom: 35px;
+}

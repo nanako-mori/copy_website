@@ -26,6 +26,15 @@ $maxWidthLg: calc(100% - 20px);
     text-align: center;
 }
 
+@mixin defaultText($font: 16px, $color: $textBaseColor) {
+    font-size: $font;
+    color: $color;
+}
+
+@mixin marginAuto($margin) {
+    margin: $margin;
+}
+
 @mixin contactBtn($radius: 25px, $padding: 11px 40px) {
     padding: $padding;
     color: $colorWhite;

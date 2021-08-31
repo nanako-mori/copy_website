@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,16 +19,51 @@ ul {
   list-style-type: none;
 }
 
+/* 文字、行間、書体、文字色、太さに関するスタイル */
+
 .text_sm {
   font-size: 14px;
   color: #333;
 }
 
+.text_md {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text_md_white,
+.reasons,
+.step_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text_lg_thin {
+  font-size: 20px;
+  color: #333;
+}
+
+.text_lg,
+.merits_title p,
+.about_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.text_lg_white,
+dl dt,
+.catch_copy02 p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .text_xl,
-.contact_title,
 .message_title,
 .benefits_title,
-.flow_title,
 .ability_title {
   font-size: 28px;
   font-weight: 600;
@@ -34,9 +71,6 @@ ul {
 }
 
 .text_xl_white,
-.learn_title,
-.members_title,
-.study_title,
 .contact_btn_lg {
   font-size: 28px;
   font-weight: 600;
@@ -45,6 +79,139 @@ ul {
 
 .text_left {
   text-align: left;
+}
+
+.colored_strong,
+.support_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ebb94d;
+}
+
+.title_xl {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.main_title {
+  font-size: 16px;
+}
+
+.get_skill {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.period {
+  font-size: 21px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about_text {
+  margin: 40px 0 10px 0;
+}
+
+.step_title {
+  background-color: #ebb94d;
+  border-radius: 5px;
+}
+
+.ability_title {
+  margin: 20px auto 35px;
+}
+
+.ability_title span {
+  font-size: 16px;
+}
+
+.merits_title p:nth-of-type(2) {
+  font-size: 28px;
+}
+
+.merits_item {
+  font-size: 16px;
+  color: #333;
+}
+
+.support_title {
+  font-size: 28px;
+}
+
+.flow_detail p {
+  margin: 20px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.bangkok_title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.why_bangkok {
+  font-size: 14px;
+  color: #fff;
+}
+
+.benefits_title {
+  margin: 20px auto 40px;
+}
+
+.permanent {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.permanent span {
+  color: #fff;
+}
+
+.message_title {
+  margin-bottom: 35px;
+}
+
+.u_mb_sm,
+.get_skill,
+.period,
+.support_title,
+.reasons li {
+  margin-bottom: 10px;
+}
+
+.u_mb_md,
+.bangkok_title,
+.why_bangkok,
+.reasons li:last-child {
+  margin-bottom: 20px;
+}
+
+.u_mb_lg,
+.step_title {
+  margin-bottom: 30px;
+}
+
+.u_mb_xl {
+  margin-bottom: 40px;
+}
+
+.u_m20_at_10 {
+  margin: 20px auto 10px;
+}
+
+.u_m20_at {
+  margin: 20px auto;
+}
+
+.wrapper {
+  padding: 40px 0;
+  text-align: center;
 }
 
 header {
@@ -89,17 +256,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.catch_copy {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
   text-align: center;
-}
-
-.catch_copy p {
-  margin-bottom: 10px;
 }
 
 .main_logo {
@@ -107,29 +264,11 @@ header {
   margin-bottom: 20px;
 }
 
-.title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
-}
-
-.title h1 {
-  font-size: 16px;
-}
-
 .conversion {
   padding: 30px 0;
   background-color: #ebb94d;
   padding: 30px 0;
   text-align: center;
-}
-
-.get_skill {
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
 }
 
 .attention {
@@ -149,14 +288,6 @@ header {
   display: block;
   max-width: 1028px;
   margin: 45px auto;
-}
-
-.period {
-  font-size: 21px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 .sns_btn {
@@ -193,12 +324,6 @@ header {
   text-align: center;
   background: url(../images/introbottom.jpg) no-repeat;
   background-size: cover;
-}
-
-.section_title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
 }
 
 .braces,
@@ -274,13 +399,6 @@ header {
   margin: 0 auto;
 }
 
-.about_text {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin: 40px 0 10px 0;
-}
-
 .five_skills {
   width: 1170px;
   max-width: calc(100% - 40px);
@@ -289,14 +407,6 @@ header {
   background-color: #fff;
   border: 2px solid #ebb94d;
   border-radius: 5px;
-}
-
-.skills_title,
-.study_subtitle {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
 }
 
 .skills_list {
@@ -335,20 +445,6 @@ header {
   background-size: cover;
 }
 
-.study_title {
-  margin: 20px auto;
-}
-
-.study_subtitle {
-  color: #fff;
-}
-
-.colored_strong {
-  font-size: 20px;
-  font-weight: 600;
-  color: #ebb94d;
-}
-
 .step_wrapper {
   width: 1170px;
   margin: 30px auto 0;
@@ -380,44 +476,10 @@ header {
   margin: 0 1.5%;
 }
 
-.step_title {
-  margin-bottom: 30px;
-  background-color: #ebb94d;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-}
-
 .catch_copy02 {
   padding: 40px 0;
   text-align: center;
   background-color: #016ea9;
-}
-
-.catch_copy02 p {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.get_ability {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.ability_title {
-  margin: 20px auto 35px;
-}
-
-.ability_title span {
-  font-size: 16px;
-}
-
-.ability_caption {
-  margin-bottom: 10px;
-  font-size: 20px;
-  color: #333;
 }
 
 .ability_list {
@@ -438,26 +500,10 @@ header {
   height: auto;
 }
 
-.ability_caption02 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
-
 .merits {
   padding: 40px 0;
   text-align: center;
   background-color: #fef5e0;
-}
-
-.merits_title p {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-}
-
-.merits_title p:nth-of-type(2) {
-  font-size: 28px;
 }
 
 .merits_wrapper {
@@ -485,11 +531,6 @@ header {
   margin: 8px 0;
 }
 
-.merits_item {
-  font-size: 16px;
-  color: #333;
-}
-
 .support {
   width: 1170px;
   max-width: calc(100% - 40px);
@@ -500,51 +541,12 @@ header {
   border-radius: 5px;
 }
 
-.support_title,
-.make_team,
-.after_course,
-.possible,
-.virtually_free,
-.learn_caption {
-  margin-bottom: 10px;
-}
-
-.support_title {
-  font-size: 28px;
-  font-weight: 600;
-  color: #ebb94d;
-}
-
-.make_team {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-}
-
-.evidence,
-.after_course {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
-
 .members {
   padding: 40px 0;
   text-align: center;
   background: url(../images/teacherbg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.members_title {
-  margin: 20px auto 10px;
-}
-
-.start_members {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
 }
 
 .members_list {
@@ -587,6 +589,13 @@ header {
   border: 3px solid #fff;
 }
 
+.solid_border02 {
+  width: 1170px;
+  padding: 40px;
+  margin: 40px auto 0;
+  border: 2px solid #fff;
+}
+
 .become_nomad {
   padding: 40px 0;
   text-align: center;
@@ -626,15 +635,6 @@ header {
 .braces02::after {
   border-right: 4px solid #fff;
   border-bottom: 4px solid #fff;
-}
-
-.answer {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.evidence {
-  margin-bottom: 30px;
 }
 
 .voices_list {
@@ -679,16 +679,6 @@ header {
   background-size: cover;
 }
 
-.learn_title {
-  margin: 20px auto 10px;
-}
-
-.learn_caption {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-}
-
 .course {
   display: flex;
   justify-content: center;
@@ -710,9 +700,6 @@ dl:first-child {
 }
 
 dl dt {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
   padding: 15px;
   margin-bottom: 10px;
   background-color: #016ea9;
@@ -724,15 +711,6 @@ dl dd {
   color: #000;
   padding: 10px;
   border-bottom: 1px dotted #e5e5e5;
-}
-
-.flow {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.flow_title {
-  margin: 20px auto 10;
 }
 
 .flow_image {
@@ -772,58 +750,11 @@ dl dd {
   font-size: 18px;
 }
 
-.flow_detail p {
-  margin: 20px 0;
-  font-size: 14px;
-  text-align: left;
-}
-
-.flow_detail .bold {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
-
 .bangkok {
   padding: 80px 80px;
   background: url(../images/bangkokbg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.bangkok_title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-}
-
-.why_bangkok {
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #fff;
-}
-
-.reasons {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-}
-
-.reasons li {
-  margin-bottom: 10px;
-}
-
-.reasons li:last-child {
-  margin-bottom: 20px;
-}
-
-.bangkok_caption {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 10px;
 }
 
 .benefits {
@@ -832,34 +763,12 @@ dl dd {
   background-color: #f7c23c;
 }
 
-.benefits_title {
-  margin: 20px auto 40px;
-}
-
-.permanent {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.permanent span {
-  color: #fff;
-}
-
 .solid_border02_bg {
   position: relative;
   bottom: -58px;
   width: 45%;
   margin: 0 auto;
   background-color: #f7c23c;
-}
-
-.solid_border02 {
-  width: 1170px;
-  padding: 40px;
-  margin: 40px auto 0;
-  border: 2px solid #fff;
 }
 
 .benefits_list {
@@ -908,29 +817,6 @@ dl dd {
   background-size: cover;
 }
 
-.value_detail {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 40px;
-}
-
-.message {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.message_title {
-  margin-bottom: 35px;
-}
-
-.enjoy_nomad {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
-}
-
 .message_wrap {
   display: flex;
   justify-content: center;
@@ -968,16 +854,6 @@ dl dd {
   padding: 40px 20%;
   text-align: center;
   background-color: #ebb94d;
-}
-
-.contact_title {
-  margin: 20px auto;
-}
-
-.contact_caption {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
 }
 
 form {

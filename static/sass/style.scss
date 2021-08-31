@@ -1,24 +1,11 @@
 @charset "utf-8";
 @import "reset";
 @import "settings";
+@import "typography";
+@import "utilties";
 
-// 汎用クラス
-
-.text_sm {
-    font-size: $fontSm;
-    color: $textBaseColor;
-}
-
-.text_xl {
-    @include textBold(28px);
-}
-
-.text_xl_white {
-    @include textBold(28px, $colorWhite);
-}
-
-.text_left {
-    text-align: left;
+.wrapper {
+    @include wrapper;
 }
 
 header {
@@ -57,14 +44,7 @@ header {
 
 .pos_center {
     @include positionCenter;
-}
-
-.catch_copy {
-    @include textBold($fontXl);
     text-align: center;
-    p {
-        margin-bottom: 10px;
-    }
 }
 
 .main_logo {
@@ -72,23 +52,10 @@ header {
     margin-bottom: 20px;
 }
 
-.title {
-    @include textBold($fontMd);
-    text-align: center;
-    h1 {
-        font-size: $fontMd;
-    }
-}
-
 .conversion {
     padding: 30px 0;
     background-color: $accentColor01;
     @include wrapper(30px 0);
-}
-
-.get_skill {
-    @include textBold($fontLg, $colorWhite);
-    margin-bottom: 10px;
 }
 
 .attention {
@@ -105,12 +72,6 @@ header {
     display: block;
     max-width: 1028px;
     margin: 45px auto;
-}
-
-.period {
-    @include textBold(21px, $colorWhite);
-    margin-bottom: 10px;
-    text-align: center;
 }
 
 .sns_btn {
@@ -131,10 +92,6 @@ header {
     @include wrapper;
     background: url(../images/introbottom.jpg) no-repeat;
     background-size: cover;
-}
-
-.section_title {
-    @include textBold($fontXl);
 }
 
 .braces {
@@ -192,18 +149,8 @@ header {
     margin: 0 auto;
 }
 
-.about_text {
-    @include textBold(20px);
-    margin: 40px 0 10px 0;
-}
-
 .five_skills {
     @include borderArea(30px, 30px auto);
-}
-
-.skills_title {
-    @include textBold(20px);
-    margin-bottom: 10px;
 }
 
 .skills_list {
@@ -236,20 +183,6 @@ header {
     background-size: cover;
 }
 
-.study_title {
-    @extend .text_xl_white;
-    margin: 20px auto;
-}
-
-.study_subtitle {
-    @extend .skills_title;
-    color: $colorWhite;
-}
-
-.colored_strong {
-    @include textBold(20px, $accentColor01);
-}
-
 .step_wrapper {
     width: $contentsWidthLg;
     margin: 30px auto 0;
@@ -278,37 +211,12 @@ header {
     }
 }
 
-.step_title {
-    margin-bottom: 30px;
-    background-color: $accentColor01;
-    border-radius: 5px;
-    @include textBold($fontMd, $colorWhite);
-}
-
 .catch_copy02 {
     @include wrapper;
     background-color: $accentColor03;
     p {
-        @include textBold(20px, $colorWhite);
+        @extend .text_lg_white;
     }
-}
-
-.get_ability {
-    @include wrapper;
-}
-
-.ability_title {
-    @extend .text_xl;
-    margin: 20px auto 35px;
-    span {
-        font-size: $fontMd;
-    }
-}
-
-.ability_caption {
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: $textBaseColor;
 }
 
 .ability_list {
@@ -326,22 +234,9 @@ header {
     }
 }
 
-.ability_caption02 {
-    @include textBold($fontMd);
-}
-
 .merits {
     @include wrapper;
     background-color: $bgColor01;
-}
-
-.merits_title {
-    p {
-        @include textBold(20px);
-        &:nth-of-type(2) {
-            font-size: 28px;
-        }
-    }
 }
 
 .merits_wrapper {
@@ -365,34 +260,8 @@ header {
     }
 }
 
-.merits_item {
-    font-size: $fontMd;
-    color: $textBaseColor;
-}
-
 .support {
     @include borderArea(40px 20px, 40px auto);
-}
-
-.support_title,
-.make_team,
-.after_course,
-.possible,
-.learn_caption {
-    margin-bottom: 10px;
-}
-
-.support_title {
-    @include textBold(28px, $accentColor01);
-}
-
-.make_team {
-    @include textBold(20px);
-}
-
-.evidence,
-.after_course {
-    @include textBold(16px);
 }
 
 .members {
@@ -400,16 +269,6 @@ header {
     background: url(../images/teacherbg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.members_title {
-    @extend .text_xl_white;
-    margin: 20px auto 10px;
-}
-
-.start_members {
-    @include textBold($fontMd, $colorWhite);
-    margin-bottom: 10px;
 }
 
 .members_list {
@@ -453,6 +312,13 @@ header {
     border: 3px solid $colorWhite;
 }
 
+.solid_border02 {
+    width: $contentsWidthLg;
+    padding: 40px;
+    margin: 40px auto 0;
+    border: 2px solid $colorWhite;
+}
+
 .become_nomad {
     @include wrapper;
     position: relative;
@@ -486,14 +352,6 @@ header {
         border-right: 4px solid $colorWhite;
         border-bottom: 4px solid $colorWhite;
     }
-}
-
-.answer {
-    @include wrapper;
-}
-
-.evidence {
-    margin-bottom: 30px;
 }
 
 .voices_list {
@@ -534,15 +392,6 @@ header {
     background-size: cover;
 }
 
-.learn_title {
-    @extend .text_xl_white;
-    margin: 20px auto 10px;
-}
-
-.learn_caption {
-    @include textBold($fontMd, $colorWhite);
-}
-
 .course {
     @include flexCenter;
     align-items: flex-start;
@@ -560,7 +409,7 @@ dl {
         margin-right: 30px;
     }
     dt {
-        @include textBold(20px, $colorWhite);
+        @extend .text_lg_white;
         padding: 15px;
         margin-bottom: 10px;
         background-color: $accentColor03;
@@ -570,15 +419,6 @@ dl {
         padding: 10px;
         border-bottom: 1px dotted #e5e5e5;
     }
-}
-
-.flow {
-    @include wrapper;
-}
-
-.flow_title {
-    @extend .text_xl;
-    margin: 20px auto 10;
 }
 
 .flow_image {
@@ -617,17 +457,6 @@ dl {
     }
 }
 
-.flow_detail {
-    p {
-        margin: 20px 0;
-        font-size: $fontSm;
-        text-align: left;
-    }
-    .bold {
-        @include textBold($fontMd);
-    }
-}
-
 .bangkok {
     padding: 80px 80px;
     background: url(../images/bangkokbg.jpg) no-repeat;
@@ -635,49 +464,9 @@ dl {
     background-size: cover;
 }
 
-.bangkok_title {
-    @include textBold($fontXl, $colorWhite);
-    margin-bottom: 20px;
-    letter-spacing: 3px;
-}
-
-.why_bangkok {
-    margin-bottom: 20px;
-    font-size: $fontSm;
-    color: $colorWhite;
-}
-
-.reasons {
-    @include textBold($fontMd, $colorWhite);
-    li {
-        margin-bottom: 10px;
-        &:last-child {
-            margin-bottom: 20px;
-        }
-    }
-}
-
-.bangkok_caption {
-    @include textBold(20px, $colorWhite);
-    margin-bottom: 10px;
-}
-
 .benefits {
     @include wrapper;
     background-color: #f7c23c;
-}
-
-.benefits_title {
-    @extend .text_xl;
-    margin: 20px auto 40px;
-}
-
-.permanent {
-    @include textBold($fontMd);
-    margin-bottom: 10px;
-    span {
-        color: $colorWhite;
-    }
 }
 
 .solid_border02_bg {
@@ -686,17 +475,6 @@ dl {
     width: 45%;
     margin: 0 auto;
     background-color: #f7c23c;
-}
-
-.virtually_free {
-    @extend .possible;
-}
-
-.solid_border02 {
-    width: $contentsWidthLg;
-    padding: 40px;
-    margin: 40px auto 0;
-    border: 2px solid $colorWhite;
 }
 
 .benefits_list {
@@ -739,25 +517,6 @@ dl {
     background-size: cover;
 }
 
-.value_detail {
-    @include textBold(20px, $colorWhite);
-    margin-bottom: 40px;
-}
-
-.message {
-    @include wrapper;
-}
-
-.message_title {
-    @extend .text_xl;
-    margin-bottom: 35px;
-}
-
-.enjoy_nomad {
-    @include textBold(20px);
-    margin-bottom: 10px;
-}
-
 .message_wrap {
     @include flexCenter;
     width: $contentsWidth;
@@ -790,15 +549,6 @@ dl {
 .contact {
     @include wrapper(40px 20%);
     background-color: $accentColor01;
-}
-
-.contact_title {
-    @extend .text_xl;
-    margin: 20px auto;
-}
-
-.contact_caption {
-    @include textBold(16px);
 }
 
 form {
